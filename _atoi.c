@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * interactive - returns true if shell is interactive mode
+ * interactive - returns shell if true in interactive mode
  * @info: struct address
  *
- * Return: 1 if interactive mode, 0 otherwise
+ * Return: 1 if in interactive mode, 0 otherwise
  */
 int interactive(info_t *info)
 {
@@ -12,9 +12,9 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
+ * is_delim - checks whether the if character is a delimeter
  * @c: the char to check
- * @delim: the delimeter string
+ * @delim: the delimeter is string
  * Return: 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
@@ -31,9 +31,9 @@ int is_delim(char c, char *delim)
  *Return: 1 if c is alphabetic, 0 otherwise
  */
 
-int _isalpha(int c)
+int _isalpha(int r)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((r >= 'a' && r <= 'z') || (r >= 'A' && r <= 'Z'))
 		return (1);
 	else
 		return (0);
